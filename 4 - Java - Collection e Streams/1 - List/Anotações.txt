@@ -1,0 +1,45 @@
+                Comando com listas
+----------------------------------------------------------------------------------------------------
+// Gera um ArrayList de um tipo de dados escolhido.
+List<DataType> variavel = new ArrayList<>();
+
+----------------------------------------------------------------------------------------------------
+variavel.add() --> Adiciona elementos a lista
+
+----------------------------------------------------------------------------------------------------
+Collections.sort(variavel) --> Ordena a lista
+
+----------------------------------------------------------------------------------------------------
+variavel.set(index, atualização) --> Atualiza um elemento da lista
+
+----------------------------------------------------------------------------------------------------
+variavel.remove(index) --> Remove um elemento informando a posição na lista
+variavel.remove(object) --> Remove um elemento informando um objeto da lista
+
+----------------------------------------------------------------------------------------------------
+variavel.get(index) --> Retorna um elemento da lista informando sua posição
+
+----------------------------------------------------------------------------------------------------
+variavel.size() --> Retorna o tamanho da lista
+
+----------------------------------------------------------------------------------------------------
+varival.contais(object) --> Retorna um boolean que informa se existe o objeto informado na lista
+
+----------------------------------------------------------------------------------------------------
+variavel.isEmpty() -- Retorna um boolean que diz se a lista está vazia
+
+----------------------------------------------------------------------------------------------------
+variavel.clear() --> Esvazia a lista
+
+----------------------------------------------------------------------------------------------------
+variavel.indexOf(object) --> verifica se existe e retorna a posição do objeto informado
+// Retorna -1 se o elemento não existe
+
+----------------------------------------------------------------------------------------------------
+                                    Iterator
+
+Iterator<DataType> variavelIterator = variavel.Iterator(); --> instancia um iterator para a lista variavel;
+
+variavelIterator.hasNext() --> retorna um boolean que informa se há um proximo elemento na lista
+variavelIterator.next() --> retorna o objeto que será iterado
+----------------------------------------------------------------------------------------------------

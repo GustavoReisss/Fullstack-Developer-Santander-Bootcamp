@@ -1,0 +1,15 @@
+import java.util.function.Consumer;
+
+Consumer<T> --> Consumido é FunctionalInterface que recebe apenas um parametro e não possui retorno.
+
+Ex:
+    Consumer<String> imprimeUmaFrase = System.out::println; // O metodo entende que por baixo dos panos ele está recebendo um parâmetro para o sysout
+    Consumer<String> imprimeUmaFrase2 = frase -> System.out.println(frase); // aqui o parâmetro está especificado
+
+
+Utiliza o método .accept para executar a funcionalidade do consumidor
+
+Ex: 
+    System.out.println(imprimeUmaFrase2.accept("Sou uma frase!"));
+
+    Output: Sou uma frase!

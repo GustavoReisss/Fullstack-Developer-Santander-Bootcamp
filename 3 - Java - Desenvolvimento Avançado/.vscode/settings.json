@@ -1,0 +1,17 @@
+{
+    "java.project.sourcePaths": [
+        "9 - Desenvolvendo uma API de Threads no Java",
+        "8 - Iterações entre as funções",
+        "7 - parâmetro de função",
+        "6 - Funções de alta ordem",
+        "5 - Facilitando o código da API",
+        "4 - Recursividade",
+        "3 - Lambda no Java",
+        "2 - Funções e imutabilidade em Paradigma Funcional",
+        "13 - Novidades Java 10 - Aplicando os novos releases",
+        "11 - Utilizando o Parallel Streams",
+        "10 - Execução da API do Java 8",
+        "1 - Entenda o que é o Paradigma Funcional",
+        "14 - Novidades Java 11 - Aplicando os novos releases"
+    ]
+}

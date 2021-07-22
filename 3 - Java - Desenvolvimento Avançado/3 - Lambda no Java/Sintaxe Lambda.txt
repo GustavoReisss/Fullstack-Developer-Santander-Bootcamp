@@ -1,0 +1,1 @@
+InterfaceFuncional nomeVariavel = parametro -> logica;

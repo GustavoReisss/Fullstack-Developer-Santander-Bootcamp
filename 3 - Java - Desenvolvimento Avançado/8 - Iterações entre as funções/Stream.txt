@@ -1,0 +1,52 @@
+import java.util.stream.Stream;
+import java.util.stream.Collectors;
+
+Stream é uma classe abstrata que possui métodos uteis para a programação
+
+Exs:
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Recebe um array de nomes, filtra pelo nome recebido na variável filtro e agrupa na variavel nomesDaStream
+
+    String nomesDaStream = Stream.of(nomes) // cria uma variavel e recebe um array de nomes
+        .filter(nome -> nome.equals(filtro)) // filtra os nomes que estão de acordo com a variavel filtro
+        .collect(Collectors.joining()); // agrupa os nomes filtrados na variavel nomesDaStream
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Recebe um array de nomes e imprime cada nome do array.
+
+    Stream.of(nomes) // recebe um array de nomes.
+        .forEach(nome -> System.out.prinln(nome)); // para cada nome print nome.
+
+    Ou
+
+    Stream.of(nomes)
+        .forEach(System.out::prinln);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Recebe um array de numeros, filtra os números pares e os imprime multiplicando por 2.
+
+    Stream.of(numeros) // recebe um array de números
+            .filter(numero -> numero % 2 == 0)    // filtra os numeros pares
+            .forEach(numero -> System.out.println("numero " + numero + " x 2: " + numero*2));   // faz os pares vezes 2
+
+    Ou
+
+    Stream.of(numeros)    // recebe um array de números
+        .filter(numero -> numero % 2 == 0)    // filtra os numeros pares
+        .map(numero -> numero * 2)   // .map é uma função de alta ordem que recebe uma Function<T, R>, sendo T o número e R o número vezes 2
+        .forEach(System.out::println); // imprime os numeros filtrados e multiplicados
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Filtra uma lista de profissões e traz apenas as profissões que começam com gerente.
+
+    List<String> profissoes = new ArrayList<>();   // cria uma lista de profissoes
+        profissoes.add("Desenvolvedor");    // adiciona Desenvolvedor a lista
+        profissoes.add("Testador");    // adiciona Testador a lista
+        profissoes.add("Gerente de projeto");    // adiciona Gerente de projeto a lista
+        profissoes.add("Gerente de qualidade");    // adiciona Gerente de qualidade a lista
+
+        profissoes.stream()   // inicia stream na lista de profissoes
+            .filter(profissao -> profissao.startsWith("Gerente"))   // filtra as profissões que começam com gerente
+            .forEach(System.out::println);    // imprime os profissionais filtrados
+
+-----------------------------------------------------------------------------------------------------------------------------------------------

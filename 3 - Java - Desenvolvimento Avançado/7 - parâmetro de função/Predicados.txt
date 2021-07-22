@@ -1,0 +1,19 @@
+import java.util.function.Predicate;
+
+Predicate<T> --> Predicados recebem um valor ou uma validação e retornam um booleano
+
+ Ex:
+    Predicate<String> estaVazio = valor -> valor.isEmpty();
+
+    Ou
+
+    Predicate<String> estaVazio = valor -> {
+        return valor.isEmpty();
+    };
+
+
+Predicate utiliza o método .test para executar a validação proposta.
+
+Ex:
+    System.out.println(estaVazio.test("")); // true
+    System.out.println(estaVazio.test("Estou cheio"));  // false

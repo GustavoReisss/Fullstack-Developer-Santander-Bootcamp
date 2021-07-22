@@ -1,0 +1,20 @@
+git init --> incializa um repositório git na pasta em questão
+git add <file> ou git add *        --> git add novoArquivo.txt
+git status                         --> git status
+git commit -m "Ação realizada" 	   --> git commit -m "adiciona novoArquivo"
+----------------------------------------------------------------------------
+cd --> navega pelos arquivos
+ls --> lista os arquivos da pasta --> ls -a --> mostra arquivos ocultos
+mkdir --> cria pasta --> mkdir <nomePasta> ----> mkdir novaPasta
+echo --> cria um arquivo de texto --> echo "conteudo" > nomeDoArquivo.txt ----> echo "testando" > novoArquivo.txt
+mv --> move arquivos  --> mv <arquivo> <destino> ----> mv novoArquivo.txt ./novaPasta/
+rm --> remove um determinado arquivo ou itens de dentro de uma pasta --> rm novoArquivo.txt
+rmdir --> remove a pasta se estiver vazia --> rmdir <pasta> ----> rmdir novaPasta
+----------------------------------------------------------------------------
+Subindo para o repositorio remoto
+
+git init --> incializa um repositório git na pasta em questão
+git add --> adiciona todos os arquivos
+git commit -m "Ação" ---> commita todos os arquivos
+git remote add [origin/nome] [local do repertorio git]
+git push [origin/nome] [master/nome]

@@ -1,0 +1,27 @@
+import java.util.function.Function;
+
+Functions<T, R> --> São usados como funções, sendo o generics T o parâmetro de entrada
+e o generics R o parametro de retorno.
+
+caso seja usado em apenas uma linha não será preciso colocar o return:
+
+Ex:
+ Function<String, Integer> converterStringParaInteiroEDobrar = string -> Integer.valueOf(string) * 2;
+
+
+Caso tenha mais de uma linha devemos usar o return.
+
+Ex:
+ Function<String, Integer> converterStringParaInteiroEDobrar = string -> {
+            System.out.println("Oi sou o número: " + string);
+            return Integer.valueOf(string) * 2;
+        };
+
+
+
+Utiliza o método .apply para executar a funcionalidade da Function
+
+Ex: 
+    System.out.println(converterStringParaInteiroEDobrar.apply("322"));
+
+    Output: 644

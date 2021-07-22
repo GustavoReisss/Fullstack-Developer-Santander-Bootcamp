@@ -1,0 +1,16 @@
+import java.util.function.Supplier;
+
+Supplier<T> --> Os supridores são FunctionalInterfaces que não recebem parâmetros,
+e retornam o valor do tipo utilizado no Generics T
+
+Ex:
+    Supplier<Pessoa> instanciaPessoa = () -> new Pessoa();
+    // retorna a pessoa instanciada.
+
+
+Utiliza o método .get para executar as funcionalidades do Supplier.
+
+Ex:
+    System.out.println(instanciaPessoa.get());
+
+    Output: Nome: Gustavo, idade: 19 // toString da classe Pessoa.
